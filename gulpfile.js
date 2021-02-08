@@ -6,18 +6,18 @@ const uglify = require('gulp-uglify');
 const del = require('del');
 var browserSync = require('browser-sync').create();
 const sourcemaps = require('gulp-sourcemaps');
-const less = require('gulp-less')
+const sass = require('gulp-sass')
 
 function styles() {
-    return gulp.src('src/sass/**/*.scss')
+    return gulp.src('src/sass/style.scss')
     .pipe(sourcemaps.init())
-    .pipe(less())
+    .pipe(sass())
     .pipe(concat('style.css'))
     .pipe(autoprefixer({
             cascade: false
     }))
-    .pipe(cleanCSS({ 
-        level: 2 
+    .pipe(cleanCSS({
+        level: 2
     }))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('src/css'))

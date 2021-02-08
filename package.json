@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "del": "^6.0.0",
-    "g": "^2.0.1"
+    "g": "^2.0.1",
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "browser-sync": "^2.26.14",

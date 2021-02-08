@@ -1,0 +1,29 @@
+.main-nav {
+    outline-offset: -3px;
+    outline: 5px solid red;
+}
+.site-list {
+    outline-offset: -5px;
+    outline: 5px solid green;
+}
+.user-list {
+    outline-offset: -5px;
+    outline: 5px solid green;
+}
+
+.main-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.main-nav__list a {
+    color: #ffffff;
+}
+.main-nav__wrapper {
+    @media (min-width: $tablet-width) {
+        display: flex;
+        justify-content: space-between;
+        width: 600px;
+        margin: 0;
+    }
+}

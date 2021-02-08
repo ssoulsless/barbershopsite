@@ -9,7 +9,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const less = require('gulp-less')
 
 function styles() {
-    return gulp.src('src/less/**/*.less')
+    return gulp.src('src/sass/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(less())
     .pipe(concat('style.css'))
@@ -43,7 +43,7 @@ function watch() {
             baseDir: "src"
         }
     });
-    gulp.watch('src/less/**/*.less', styles);
+    gulp.watch('src/sass/**/*.scss', styles);
     gulp.watch('src/js/**/*.js', scripts);
     gulp.watch("src/*.html").on('change', browserSync.reload);
 }

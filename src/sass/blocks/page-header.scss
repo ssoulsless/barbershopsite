@@ -3,14 +3,43 @@
     flex-direction: column;
     background-color: $darkgrey2;
     color: #FFFFFF;
+
+    @media (min-width: $tablet-width) {
+        background-color: #000000;
+    }
 }
+
 .page-header__logo {
-    height: 85px;
+    height: 100px;
+    text-align: center;
+
+
     @media (min-width: $tablet-width) {
         order: 2;
         height: 400px;
+        background-color: black;
+        background-image: url('../img/back-tablet.png');
+        background-repeat: no-repeat;
+        background-position: 50% -9px;
+        background-size: cover;
     }
+
     @media (min-width: $desktop-width) {
         height: 648px;
+        background-image: url('../img/back-desktop.png');
+        background-position: 50% 0;
+        background-size: cover;
+    }
+
+    outline: 5px solid red;
+    outline-offset: -5px;
+}
+
+.page-header__logo img {
+    width: 226px;
+    height: 30px;
+    margin-top: 35px;
+    @media (min-width: $desktop-width) {
+        margin-top: 104px;
     }
 }

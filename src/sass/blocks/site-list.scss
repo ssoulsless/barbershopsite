@@ -1,0 +1,24 @@
+.site-list {
+    @media (min-width: $tablet-width) {
+        width: 570;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 780;
+    }
+}
+
+.site-list a {
+    position: relative;
+    display: block;
+    padding: 12px 21px;
+    padding-bottom: 13px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: $lightbrown;
+    border-top: 1px solid #886e5b;
+    border-bottom: 1px solid #71543f;
+}

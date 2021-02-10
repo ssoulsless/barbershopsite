@@ -34,7 +34,7 @@ function scripts() {
     .pipe(browserSync.stream());
 }
 function clean() {
-    return del(['src/css/**/*.css', 'src/js/**/*.js'])
+    return del(['src/css/**/*.css'])
 }
 
 function watch() {

@@ -1,9 +1,3 @@
-.user-list {
-    @media (min-width: $tablet-width) {
-        width: 60;
-    }
-}
-
 .user-list__login {
     position: relative;
     display: block;
@@ -12,6 +6,25 @@
     line-height: 18px;
     color: #ffffff;
     text-decoration: none;
+
+    @media (min-width: $tablet-width) {
+        width: 60px;
+        height: 70px;
+        padding: 0;
+
+        span {
+            position: absolute;
+            opacity: 0;
+        }
+
+        &:hover .user-list__login-icon {
+            transform: translate(0px, -3px);
+        }
+
+        &:active .user-list__login-icon {
+            opacity: 0.3;
+        }
+    }
 }
 
 .user-list__login-icon {
@@ -21,5 +34,10 @@
     width: 16px;
     height: 16px;
     opacity: 0.3;
-    fill: #ffffff;
+
+    @media (min-width: $tablet-width) {
+        opacity: 1;
+        top: 27px;
+        left: 12px;
+    }
 }

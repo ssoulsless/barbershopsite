@@ -25,6 +25,37 @@
             opacity: 0.3;
         }
     }
+
+    @media (min-width: $desktop-width) {
+        span {
+            opacity: 1;
+            position: relative;
+            text-align: left;
+            left: 67px;
+            top: 28px;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        &:hover .user-list__login-icon {
+            transform: translate(0px, 0px);
+        }
+
+        width: 150px;
+        height: 72px;
+
+        &:hover {
+            color: #000;
+            background-color: #ffffff;
+        }
+
+        &:active {
+            color: rgba($color: (#000000), $alpha: 1.0);
+            background-color: #ffffff;
+            opacity: 1;
+        }
+    }
 }
 
 .user-list__login-icon {
@@ -37,7 +68,18 @@
 
     @media (min-width: $tablet-width) {
         opacity: 1;
-        top: 27px;
-        left: 12px;
+        top: 28px;
+        left: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+        left: 32px;
+    }
+}
+
+.user-list {
+    @media (min-width: $tablet-width) {
+        width: auto;
+        max-width: 160px;
     }
 }

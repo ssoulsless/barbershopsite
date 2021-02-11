@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
     <title>Барбершоп "Бородинский"</title>
 </head>
 
@@ -120,10 +122,10 @@
 
         <section class="advantages">
             <div class="advantages__wrapper slider">
-                <h2 class="visually-hidden">Наши преймущества</h2>
                 <ul class="advantages__list slider__list">
 
-                    <li class="advantages__item advantages__item--fast slider__item">
+                    <li class="advantages__item advantages__item--fast slider__item slider__item--current">
+                        <img src="./img/advantage-1-icon.svg" class="advantages__icon" width="95" height="94">
                         <h3 class="advantages__title">Быстро</h3>
                         <p class="advantages__description">
                             Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки.
@@ -131,6 +133,7 @@
                     </li>
 
                     <li class="advantages__item advantages__item--cool slider__item">
+                        <img src="./img/advantage-2-icon.svg" class="advantages__icon" width="95" height="88">
                         <h3 class="advantages__title ">Круто</h3>
                         <p class="advantages__description">
                             Забудьте как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.
@@ -138,6 +141,7 @@
                     </li>
 
                     <li class="advantages__item advantages__item--price slider__item">
+                        <img src="./img/advantage-3-icon.svg" class="advantages__icon" width="95" height="91">
                         <h3 class="advantages__title">Дорого</h3>
                         <p class="advantages__description">
                             Наши мастера - професионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?
@@ -145,10 +149,10 @@
                     </li>
 
                 </ul>
-                <div class="advantages__toogles slider__toogles">
-                    <button class="slider__toogle slider__toogle--current" type="button">1</button>
-                    <button class="slider__toogle" type="button">2</button>
-                    <button class="slider__toogle" type="button">3</button>
+                <div class="advantages__toggles slider__toggles">
+                    <img class="slider__toggle slider__toggle--current" src="./img/current slider.svg" height="10" width="10">
+                    <img class="slider__toggle" src="./img/slider indicator.svg" height="10" width="10">
+                    <img class="slider__toggle" src="./img/slider indicator.svg" height="10" width="10">
                 </div>
             </div>
         </section>
@@ -280,6 +284,11 @@
         </div>
     </footer>
     <script type="text/javascript" src="js/menutoggle.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
+
+    <script type="text/javascript" src="js/slider.js"></script>
 </body>
 
 </html>

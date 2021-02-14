@@ -1,5 +1,8 @@
 .slider__toggles {
     text-align: center;
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
 }
 .slider__toggle {
     margin: 0 11px 12px;

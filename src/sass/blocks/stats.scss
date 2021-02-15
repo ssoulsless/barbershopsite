@@ -1,6 +1,6 @@
 .stats {
-    background-color: $darkgrey;
     color: #ffffff;
+    background-color: #353535;
 }
 
 .stats__list-item {
@@ -143,6 +143,7 @@
     color: rgba($color: #ffffff, $alpha: 0.3);
     background-color: $darkgrey2;
     padding-top: 19px;
+    padding-bottom: 14px;
 
     @media (min-width: $tablet-width) {
         display: none;
@@ -159,10 +160,12 @@
     }
 
     @media (min-width: $desktop-width) {
+        $stats-shift: -171px;
+        margin: 0 auto $stats-shift;
         padding: 0;
-        margin: auto;
         max-width: 960px;
         display: grid;
+        top: $stats-shift;
         grid-template-columns: 1fr 2fr;
     }
 }
@@ -201,4 +204,3 @@
         font-size: 72px;
     }
 }
-

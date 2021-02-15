@@ -1,0 +1,12 @@
+.reviews {
+    margin-top: 20px;
+    background-color: $lightgrey;
+}
+ .reviews h2 {
+     margin: 0;
+ }
+.reviews__write {
+    @media (max-width: $mobile-width-only) {
+        display: none;
+    }
+}

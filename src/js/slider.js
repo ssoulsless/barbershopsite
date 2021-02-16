@@ -26,7 +26,7 @@ $(window).resize(function () {
     };
 });
 
-$('.slider-advantages__list').on('swipe', function () {
+$('.slider-advantages__list').on('afterChange', function () {
     for (let n = 0; n < toggleAdvantages.length; n++) {
         toggleAdvantages[n].src = "./img/slider indicator.svg";
     };
@@ -34,7 +34,7 @@ $('.slider-advantages__list').on('swipe', function () {
     toggleAdvantages[i].src = "./img/current slider.svg";
 });
 
-$('.slider-reviews__list').on('swipe', function () {
+$('.slider-reviews__list').on('afterChange', function () {
     for (let n = 0; n < toggleReviews.length; n++) {
         toggleReviews[n].src = "./img/slider-indicator-reviews.svg";
     };

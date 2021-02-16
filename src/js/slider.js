@@ -1,17 +1,24 @@
-let toggle;
-let slider__item;
+let toggleAdvantages;
+let sliderItemAdvantages;
 let isSlicked = false;
+let toggleReviews;
+let sliderItemReviews;
 
 $(document).ready(function () {
     if ($(document).width() < 768) {
         slickify();
     };
+    $('.slider-reviews__list').slick({
+        arrows: true
+    });
+    toggleReviews = $('.slider-reviews__toggle');
+    sliderItemReviews = $('.slider-reviews__item');
 });
 
 $(window).resize(function () {
     let $windowWidth = $(document).width();
     if (($windowWidth >= 768) & (isSlicked)) {
-        $('.slider__list').slick("unslick");
+        $('.slider-advantages__list').slick("unslick");
         isSlicked = false;
     }
     if (($windowWidth < 767) & (!isSlicked)) {
@@ -19,25 +26,30 @@ $(window).resize(function () {
     };
 });
 
-$('.slider__list').on('swipe', function () {
-    for (let n = 0; n < toggle.length; n++) {
-        slider__item[n].classList.remove("slider__item--current");
-        toggle[n].src = "./img/slider indicator.svg";
-        toggle[n].classList.remove("slider__toggle--current");
+$('.slider-advantages__list').on('swipe', function () {
+    for (let n = 0; n < toggleAdvantages.length; n++) {
+        toggleAdvantages[n].src = "./img/slider indicator.svg";
     };
-    let i = $('.slider__list').slick('slickCurrentSlide');
-    toggle[i].classList.add("slider__toggle--current");
-    toggle[i].src = "./img/current slider.svg";
-    slider__item[i].classList.add("slider__item--current");
+    let i = $('.slider-advantages__list').slick('slickCurrentSlide');
+    toggleAdvantages[i].src = "./img/current slider.svg";
+});
+
+$('.slider-reviews__list').on('swipe', function () {
+    for (let n = 0; n < toggleReviews.length; n++) {
+        toggleReviews[n].src = "./img/slider-indicator-reviews.svg";
+    };
+    let i = $('.slider-reviews__list').slick('slickCurrentSlide');
+    toggleReviews[i].src = "./img/current-slider-reviews.svg";
 });
 
 function slickify() {
     isSlicked = true;
-    toggle = $(".slider__toggle");
-    slider__item = $(".slider__item");
-    $('.slider__list').slick({
-        slider__item: 3,
-        infinite: false,
-        mobileFirst: true
+    toggleAdvantages = $(".slider-advantages__toggle");
+    sliderItemAdvantages = $(".slider-advantages__item");
+    $('.slider-advantages__list').slick({
+        mobileFirst: true,
+        arrows: false
     });
 }
+
+

@@ -123,10 +123,10 @@
         </section>
 
         <section class="advantages">
-            <div class="advantages__wrapper slider">
-                <ul class="advantages__list slider__list">
+            <div class="advantages__wrapper">
+                <ul class="advantages__list slider-advantages__list">
 
-                    <li class="advantages__item advantages__item--fast slider__item slider__item--current">
+                    <li class="advantages__item advantages__item--fast slider-advantages__item slider-advantages__item--current">
                         <img src="./img/advantage-1-icon.svg" class="advantages__icon" width="95" height="94">
                         <div class="advantages__content">
                         <h3 class="advantages__title">Быстро</h3>
@@ -136,7 +136,7 @@
                         </div>
                     </li>
 
-                    <li class="advantages__item advantages__item--cool slider__item">
+                    <li class="advantages__item advantages__item--cool slider-advantages__item">
                         <img src="./img/advantage-2-icon.svg" class="advantages__icon" width="95" height="88">
                         <div class="advantages__content">
                         <h3 class="advantages__title ">Круто</h3>
@@ -146,7 +146,7 @@
                         <div>
                     </li>
 
-                    <li class="advantages__item advantages__item--price slider__item">
+                    <li class="advantages__item advantages__item--price slider-advantages__item">
                         <img src="./img/advantage-3-icon.svg" class="advantages__icon" width="95" height="91">
                         <div class="advantages__content">
                         <h3 class="advantages__title">Дорого</h3>
@@ -157,10 +157,10 @@
                     </li>
 
                 </ul>
-                <div class="advantages__toggles slider__toggles">
-                    <img class="slider__toggle slider__toggle--current" src="./img/current slider.svg" height="10" width="10">
-                    <img class="slider__toggle" src="./img/slider indicator.svg" height="10" width="10">
-                    <img class="slider__toggle" src="./img/slider indicator.svg" height="10" width="10">
+                <div class="advantages__toggles slider-advantages__toggles">
+                    <img class="slider-advantages__toggle slider-advantages__toggle--current" src="./img/current slider.svg" height="10" width="10">
+                    <img class="slider-advantages__toggle" src="./img/slider indicator.svg" height="10" width="10">
+                    <img class="slider-advantages__toggle" src="./img/slider indicator.svg" height="10" width="10">
                 </div>
             </div>
         </section>
@@ -174,7 +174,7 @@
                             <b class="news__day">29</b> сент
                         </time>
                         <p class="news__text">
-                            Нам наконец-то завезли Егермейстер! Теперь вы можеете потянуть стаканчик во время стрижки
+                            Нам наконец завезли Ягермайстер! Теперь вы можеете пропустить стаканчик во время стрижки
                         </p>
                     </a>
 
@@ -201,51 +201,60 @@
         </section>
 
         <section class="reviews">
-            <div class="reviews__wrapper slider">
+            <div class="reviews__wrapper">
+
+                <div class="reviews__title-wrapper">
                 <h2 class="reviews__title">Отзывы о нас</h2>
                 <a class="button reviews__write" href="form.html">Оставить свой</a>
+                </div>
 
-                <div class="reviews__list slider__list">
-                    <blockquote class="reviews__item slider__item">
-                        <img src="img/review_author.png" class="reviews__author-imgae" width="50" height="33" alt="Фото Тревиса Баркера">
-                        <div class="reviews__author-info">
-                            <cite class="reviews__author-name">
-                                Трэвис Баркер
-                            </cite>
-                            <p class="reviews__text">
-                                Спасибо за лысину! Был проездом в Москве, заскоичил побриться, чтобы было вдно новую татуировку!
-                            </p>
+                <div class="reviews__list slider-reviews__list">
+                    <blockquote class="reviews__item slider-reviews__item">
+                        <div class="reviews__item-wrapper">
+                            <img src="img/reviews_author.jpg" class="reviews__author-image" width="50" height="33" alt="Фото Тревиса Баркера">
+                            <div class="reviews__author-info">
+                                <cite class="reviews__author-name">
+                                    Трэвис Баркер
+                                </cite>
+                                <p class="reviews__text">
+                                    Спасибо за лысину! Был проездом в Москве, заскоичил побриться, чтобы было видно новую татуировку!
+                                </p>
+                            </div>
                         </div>
                     </blockquote>
 
-                    <blockquote class="reviews__item slider__item">
-                        <img src="img/review_author.png" class="reviews__author-imgae" width="50" height="33" alt="Фото Джона Смита">
-                        <div class="reviews__author-info">
-                            <cite class="reviews__author-name">
-                                Джон Смит
-                            </cite>
-                            <p class="reviews__text">
-                                Отличную стрижку мне сделали ребята.
-                            </p>
+                    <blockquote class="reviews__item slider-reviews__item">
+                        <div class="reviews__item-wrapper">
+                        <img src="img/reviews_author.jpg" class="reviews__author-image" width="50" height="33" alt="Фото Джона Смита">
+                            <div class="reviews__author-info">
+                                <cite class="reviews__author-name">
+                                    Джон Смит
+                                </cite>
+                                <p class="reviews__text">
+                                    Отличную стрижку мне сделали ребята.
+                                </p>
+                            </div>
                         </div>
                     </blockquote>
 
-                    <blockquote class="reviews__item slider__item">
-                        <img src="img/review_author.png" class="reviews__author-imgae" width="50" height="33" alt="Фото Ивана Бородайло">
-                        <div class="reviews__author-info">
-                            <cite class="reviews__author-name">
-                                Иван Бородайло
-                            </cite>
-                            <p class="reviews__text">
-                                В Бородинском ваша борода в надежных руках!
-                            </p>
+                    <blockquote class="reviews__item slider-reviews__item">
+                        <div class="reviews__item-wrapper">
+                        <img src="img/reviews_author.jpg" class="reviews__author-image" width="50" height="33" alt="Фото Ивана Бородайло">
+                            <div class="reviews__author-info">
+                                <cite class="reviews__author-name">
+                                    Иван Бородайло
+                                </cite>
+                                <p class="reviews__text">
+                                    В Бородинском ваша борода в надежных руках!
+                                </p>
+                            </div>
                         </div>
                     </blockquote>
                 </div>
-                <div class="rewiews__toogles slider__toogles">
-                    <button class="slider__toogle slider__toogle--current" type="button">1</button>
-                    <button class="slider__toogle" type="button">2</button>
-                    <button class="slider__toogle" type="button">3</button>
+                <div class="rewiews__toogles slider-reviews__toggles">
+                    <img class="slider-reviews__toggle slider-reviews__toggle--current" src="./img/current-slider-reviews.svg" height="10" width="10">
+                    <img class="slider-reviews__toggle" src="./img/slider-indicator-reviews.svg" height="10" width="10">
+                    <img class="slider-reviews__toggle" src="./img/slider-indicator-reviews.svg" height="10" width="10">
                 </div>
             </div>
         </section>

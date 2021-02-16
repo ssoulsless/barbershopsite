@@ -1,9 +1,20 @@
-.slider__toggles {
+.slider-advantages__toggles,
+.slider-reviews__toggles {
     text-align: center;
+
     @media (min-width: $tablet-width) {
         display: none;
     }
 }
-.slider__toggle {
+
+.slider-advantages__toggle,
+.slider-reviews__toggle {
     margin: 0 11px 12px;
+}
+
+.slick-prev.slick-arrow {
+    width: 50px;
+    height: 160px;
+    border: rgba($color: #000000, $alpha: 0.1) groove 1px;
+
 }

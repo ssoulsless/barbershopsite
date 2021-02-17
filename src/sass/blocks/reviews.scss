@@ -1,6 +1,23 @@
 .reviews {
     margin-top: 27px;
     background-color: $lightgrey;
+    @media (min-width: $tablet-width) {
+        padding: 0 92px;
+    }
+}
+
+.reviews__wrapper {
+    @media (min-width: $tablet-width) {
+        display: flex;
+        flex-direction: column;
+        max-width: 902px;
+        margin: auto;
+    }
+
+    @media (min-width: $desktop-width) {
+        max-width: 960px;
+        margin: auto;
+    }
 }
 
 .reviews h2 {
@@ -45,6 +62,7 @@
         width: 542px;
         height: 160px;
     }
+
     @media (min-width: $desktop-width) {
         max-width: 818px;
         margin: auto;
@@ -57,9 +75,11 @@
     min-width: 280px;
     width: auto;
     justify-content: left;
+
     @media (min-width: $tablet-width) {
         padding: 0px 50px 0px 30px;
     }
+
     @media (min-width: $desktop-width) {
         padding: 0;
         width: 818px;
@@ -72,6 +92,7 @@
     font-size: 24px;
     font-weight: bold;
     font-style: normal;
+
     @media (min-width: $tablet-width) {
         position: relative;
     }
@@ -79,11 +100,13 @@
 
 .reviews__author-info {
     position: relative;
+
     @media (min-width: $tablet-width) {
         top: 31px;
         display: flex;
         flex-direction: column;
     }
+
     @media (min-width: $desktop-width) {
         width: 480px;
     }
@@ -103,6 +126,7 @@
         height: 80px;
         margin: 40px 30px 40px 0;
     }
+
     @media (min-width: $desktop-width) {
         width: 249px;
         height: 160px;
@@ -114,20 +138,9 @@
 .reviews__text {
     font-size: 18px;
     line-height: 27px;
+
     @media (min-width: $tablet-width) {
         margin: 12px 0 0 0;
-    }
-}
-
-.reviews__wrapper {
-    @media (min-width: $tablet-width) {
-        display: flex;
-        flex-direction: column;
-        margin: 0 64px;
-    }
-    @media (min-width: $desktop-width) {
-        max-width: 960px;
-        margin: auto;
     }
 }
 

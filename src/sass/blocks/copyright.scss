@@ -1,0 +1,27 @@
+.copyright {
+    margin-top: 31px;
+    text-align: center;
+}
+.copyright__text {
+    font-size: 18px;
+    color: #ffffff;
+    @media (min-width: $desktop-width) {
+        margin-bottom: 13px;
+        margin-top: 0;
+    }
+}
+
+.copyright__link {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 87.5%;
+    margin: auto;
+    padding: 16px;
+    border: rgba($color: #ffffff, $alpha: 0.2) solid 1px;
+    @media (min-width: $tablet-width) {
+        width: 100%;
+    }
+}

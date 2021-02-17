@@ -1,0 +1,41 @@
+.contacts__title {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 33px auto;
+    line-height: 27px;
+
+    @media (min-width: $tablet-width) {
+        text-transform: uppercase;
+    }
+}
+
+.contacts__text {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 27px;
+
+    @media (min-width: $tablet-width) {
+        text-align: start;
+    }
+}
+
+.contacts__phone {
+    span {
+        display: none;
+    }
+
+    color: #ffffff;
+    display: block;
+    margin-top: 17px;
+    border: rgba($color: #ffffff, $alpha: 0.1) groove 1px;
+    padding: 12px 75px;
+
+    @media (min-width: $tablet-width) {
+        span {
+            display: inline;
+        }
+
+        border: none;
+        padding: 0;
+    }
+}
